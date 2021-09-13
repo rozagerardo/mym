@@ -1,3 +1,18 @@
+### Run odoo:
+```
+python odoo.py -w nzpass -r mymadmin --addons-path=addons --db-filter=mym-db$
+```
+
+### Add 'Adelanto o Sena:
+1. Crear usuario `dev` con permisos tecnicos
+2. Loguearse con usuario `dev`
+3. Seguir estos pasos:
+https://www.odoo.com/es_ES/forum/ayuda-1/solved-how-to-add-field-into-quotation-sale-order-pdf-98720
+  1. Agregar Campo a modelo de sales.order
+  2. Agregar campo a View (QView) del reporte de sales.order.document
+  3. Agregar field a Vista de formulario de sale.order.form
+
+
 [![Build Status](http://runbot.odoo.com/runbot/badge/flat/1/8.0.svg)](http://runbot.odoo.com/runbot)
 [![Tech Doc](http://img.shields.io/badge/8.0-docs-8f8f8f.svg?style=flat)](http://www.odoo.com/documentation/8.0) 
 [![Help](http://img.shields.io/badge/8.0-help-8f8f8f.svg?style=flat)](https://www.odoo.com/forum/help-1)
